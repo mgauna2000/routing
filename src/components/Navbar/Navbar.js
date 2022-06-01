@@ -1,14 +1,15 @@
 import React from "react";
 import CartWidget from "../CartWidget/CartWidget";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <Link to="/" className="navbar-brand">
             <img src="otakus.png" alt="" style={{ height: "50px" }} />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -23,14 +24,14 @@ export const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link to="/" className="dropdown-item p-2">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="">
+                <Link to="/nosotros" className="dropdown-item p-2">
                   Nosotros
-                </a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -45,19 +46,19 @@ export const Navbar = () => {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link to="/productos" className="dropdown-item">
                       Mangas
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                  <Link to="/cuadros" className="dropdown-item">
                       Cuadros
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Funko Pops
-                    </a>
+                  <Link to="/funkos" className="dropdown-item">
+                      Funko Pop's
+                    </Link>
                   </li>
                 </ul>
               </li>

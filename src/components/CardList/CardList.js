@@ -50,6 +50,27 @@ export const CardList = () => {
       stock: 8,
       id: 6
     },
+    {
+      title: "Manga Sailor Moon",
+      image: "manga6.webp",
+      price: 6600,
+      stock: 8,
+      id: 6
+    },
+    {
+      title: "Manga Sailor Moon",
+      image: "manga6.webp",
+      price: 6600,
+      stock: 8,
+      id: 6
+    },
+    {
+      title: "Manga Sailor Moon",
+      image: "manga6.webp",
+      price: 6600,
+      stock: 8,
+      id: 6
+    },
   ];
 
   const getProducts = () => {

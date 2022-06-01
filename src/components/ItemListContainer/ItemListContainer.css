@@ -11,6 +11,9 @@
     border: 1px solid #000;
     margin-top: 10px;
 }
+.card h5 {
+    font-size: 30px;
+}
 @media only screen and (min-width: 768px) and (max-width: 1400px) {
     .grid {
         display: grid;
