@@ -1,24 +1,25 @@
 import React, { useEffect, useState } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
-import producto from "../../utils/producto";
+import productos from "../../utils/productos";
+import { useParams } from "react-router-dom";
+
 
 const ItemDetailContainer = () => {
+
+  const { id } = useParams()
+
   const [product, setProduct] = useState({});
 
-  const getItem = () => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve(producto);
-      }, 2000);
-    });
-  };
+
 
   useEffect(() => {
-    getItem().then((res) => {
-      console.log("Repuesta get item: ", res);
-      setProduct(res);
-    });
+    // console.log("producto filtrado por: ", productFilter)
+    setProduct(productFilter)
   }, []);
+
+  const productFilter = productos.find((product) => {
+    return product.id == id
+  })
 
   return (
     <>

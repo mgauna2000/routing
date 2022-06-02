@@ -9,7 +9,7 @@ const ItemDetail = ({ data }) => {
       <div className="row g-0">
         <div className="col-md-7">
           <img
-            src={`./${data.image}`}
+            src={`../${data.image}`}
             className="img-fluid rounded-start"
             alt="..."
           />
