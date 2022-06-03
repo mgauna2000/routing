@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import productos from "../../utils/productos";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 
 const ItemDetailContainer = () => {
 
   const { id } = useParams()
+
+  const navigate = useNavigate()
 
   const [product, setProduct] = useState({});
 
@@ -14,7 +16,11 @@ const ItemDetailContainer = () => {
 
   useEffect(() => {
     // console.log("producto filtrado por: ", productFilter)
-    setProduct(productFilter)
+    if(productFilter === undefined) {
+      navigate('/notFound')
+    } else {
+      setProduct(productFilter)
+    }
   }, []);
 
   const productFilter = productos.find((product) => {
