@@ -8,9 +8,6 @@ import { Navbar } from "./components/Navbar/Navbar";
 import Home from "./pages/Home";
 import Nosotros from "./pages/Nosotros";
 import NotFound from "./pages/NotFound";
-import Mangas from "./pages/Mangas";
-import Cuadros from "./pages/Cuadros";
-import Funkos from "./pages/Funkos";
 import Detalle from "./pages/Detalle";
 import ProductsList from "./pages/ProductsList";
 
@@ -25,9 +22,6 @@ function App() {
           <Route exact path="/products/:category" element={<ProductsList/>} />
           <Route exact path="/productos/:id" element={<Detalle/>} />
           {/* <Route exact path="/products/:category" element={<h2>pagina de productos</h2>} /> */}
-          <Route exact path="/mangas" element={<Mangas/>} />
-          <Route exact path="/cuadros" element={<Cuadros/>} />
-          <Route exact path="/funkos" element={<Funkos/>} />
           <Route exact path="*" element={<NotFound/>} />
         </Routes>
       </BrowserRouter>
