@@ -46,17 +46,17 @@ export const Navbar = () => {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link to="/productos" className="dropdown-item">
+                    <Link to="/products/mangas" className="dropdown-item">
                       Mangas
                     </Link>
                   </li>
                   <li>
-                  <Link to="/cuadros" className="dropdown-item">
+                  <Link to="/products/cuadros" className="dropdown-item">
                       Cuadros
                     </Link>
                   </li>
                   <li>
-                  <Link to="/funkos" className="dropdown-item">
+                  <Link to="/products/funkos" className="dropdown-item">
                       Funko Pop's
                     </Link>
                   </li>

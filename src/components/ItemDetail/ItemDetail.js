@@ -5,7 +5,7 @@ import "./ItemDetail.css";
 const ItemDetail = ({ data }) => {
   // max-width: 540px;
   return (
-    <div className="card mb-3 mt-4">
+    <div className="card mb-3 mt-4" style={{width: "100%", height: "auto"}}>
       <div className="row g-0">
         <div className="col-md-7">
           <img

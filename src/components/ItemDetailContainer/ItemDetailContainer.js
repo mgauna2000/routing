@@ -16,11 +16,7 @@ const ItemDetailContainer = () => {
 
   useEffect(() => {
     // console.log("producto filtrado por: ", productFilter)
-    if(productFilter === undefined) {
-      navigate('/notFound')
-    } else {
       setProduct(productFilter)
-    }
   }, []);
 
   const productFilter = productos.find((product) => {
